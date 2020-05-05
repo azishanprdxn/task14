@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, .05);
+  font-variant: small-caps;
+}
+
+section {
+  margin-top: 72px;
+}
+
+div {
+  margin: 24px;
+}
+
+h1 { text-align: center; }
+
+fieldset {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+div label {
+  vertical-align: middle;
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+button {
+  cursor: pointer;
+}
+
+button {
+  margin: 0 6px;
+  padding: 8px 24px;
+  background-color: rgba(0, 0, 0, .8);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-variant: small-caps;
+  outline: none;
+}
+
+button:hover {
+  margin: -2px 4px;
+  border: 2px solid rgba(0, 0, 0, .8);
+  background-color: transparent;
+  color: #000;
+  outline: none;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.flex-container>label {
+  width: 20%;
+  vertical-align: middle;
+}
+
+.flex-container>input[type="text"],
+.flex-container>input[type="email"],
+.flex-container>textarea {
+  width: 50%;
+}
+
+.helper {
+  display: none;
+  margin-top: 4px;
+  margin-left: 24px;
+  color: #f00;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-control {
+  text-align: center;
+}
+
+input[type=radio] {
+  margin: 3px 12px 3px 24px;
+}
+
+input[type=radio]:first-of-type {
+  margin-left: 0;
+}

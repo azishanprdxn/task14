@@ -9,6 +9,47 @@
 </head>
 
 <body>
+  <section>
+    <h1>Form Validation</h1>
+    <form id="detailsForm" method="post">
+      <fieldset>
+        <div class="form-group flex-container">
+          <label for="name">Name: </label>
+          <input type="text" id="name" required>
+          <span class="helper">
+            Enter your Name
+          </span>
+        </div>
+        <div class="form-group flex-container">
+          <label for="email">Email: </label>
+          <input type="email" id="email" required>
+          <span class="helper">
+            Enter a valid Email
+          </span>
+        </div>
+        <div class="form-group flex-container">
+          <label for="gender">Gender: </label>
+          <input type="radio" id="male" name="gender" value="Male" required checked>Male
+          <input type="radio" id="female" name="gender" value="Female" required>Female
+          <span class="helper">
+            Select your gender
+          </span>
+        </div>
+        <div class="form-group flex-container">
+          <label for="address">Address: </label>
+          <textarea rows="5" id="address" required></textarea>
+          <span class="helper">
+            Enter your Address
+          </span>
+        </div>
+        <div class="form-control">
+          <button type="button" value="Submit" onclick="onFormSubmit()">Submit</button>
+          <button type="button" value="Cancel" onclick="onFormReset()">Cancel</button>
+        </div>
+        </label>
+      </fieldset>
+    </form>
+  </section>
 
   <script src="./assets/js/script.js"></script>
 </body>
